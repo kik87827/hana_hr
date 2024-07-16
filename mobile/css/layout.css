@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+	use: 레이아웃
+*/
+
+.phead_w{height:50px;background:url("../images/bg_top.png") no-repeat 0 0/cover;position:fixed;top:0;left:0;width:100%;z-index:100;}
+.phead_logo{display:table;height:50px;font-size:0;line-height:0;}
+.phead_logo_td{display:table-cell;vertical-align: middle;padding: 0 15px;}
+.phead_logo_td img{height:23px}
+.btn_totalcall{width:50px;height:50px;background:url("../images/btn_toptotal.png") no-repeat 50% 50%/35% auto;display:inline-block;position:absolute;top:0;right:0;}
+.phead_w.type2{background:#fff;}
+.phead_w.type2 .phead_logo{margin:0 auto;}
+.phead_w.type2 .phead_logo img{height:50px;}
+.phead_w.type2 .btn_totalcall{background-image:url("../images/btn_toptotal2.png");}
+.pfoot_w{background:#111111;padding:15px 20px;}
+.pfoot_item{display:table;margin:0 auto;}
+.pfoot_td{display:table-cell;vertical-align: middle;}
+.pfoot_td.pfoot01{font-size:0;line-height:0; width:72px;padding-right:8px;}
+.pfoot_td.pfoot01 img{width:72px;}
+.pfoot_td.pfoot02{}
+.pf_copy{color:#626262;font-family: 'Noto Sans Korean';font-size:12px;word-break:break-all;}
+.pmid_section{padding:50px 0;}
+.pmid_secin{}
+.pmid_tit{color:#000000;line-height:1;text-align:center;font-weight: 500;font-size:19px;padding:20px 15px;}
+.pmid_cont{margin:0 15px;}
+@media (max-width:360px){
+	.pf_copy{font-size:10px;}
+}
+@media (max-width:359x){
+	.pf_copy{font-size:9px;}
+}
+
+
+
+.total_z{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100;text-align:left;}
+.total_z:before{display:block;content:'';width:100%;height:100%;position:fixed;top:0;left:0;background:rgba(0,0,0,0);transition:.4s;}
+.total_w{width:280px;position:absolute;top:0;right:-280px;height:100%;transition:.4s;background:#fff;}
+.total_z.active:before{background:rgba(0,0,0,.4);}
+.total_z.active .total_w{right:0;}
+.total_scr{
+	 position:relative;-webkit-transform: translateZ(0);-moz-transform: translateZ(0);-ms-transform: translateZ(0);-o-transform: translateZ(0);transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.total_sclow01{background:#13d5aa;height:50px;}
+.total_sclow02{}
+.humen_mdl{display:table;text-align:left;height:50px;font-size:0;line-height:0;padding-left:5px;}
+.humen_mdl dt,
+.humen_mdl dd{display:table-cell;vertical-align: middle;}
+.humen_mdl dt{padding-left:10px;}
+.humen_mdl dd{padding-left:10px;}
+.humen_m{display:inline-block;width:30px;height:30px;background:#fff url("../images/menu_men.png") no-repeat 50% 50%/70% auto;border-radius:100%;overflow:hidden;}
+.humen_msp01,
+.humen_msp02{color:#fff;font-size:11px;line-height:1;}
+.humen_msp01{}
+.humen_msp02{margin-top:5px;}
+.mtmenu_list{}
+.mtmenu_list > li{border-bottom:1px solid #e2e2e2;}
+.mtmenu_list > li:last-of-type{}
+.mtmenu{display:block;font-size:16px;color:#333;padding:17px 45px 19px 20px;line-height:1;position:relative;}
+.mtmenu:after{
+	display:block;content:'';
+	border-right:1px solid #aeaeae;border-bottom:1px solid #aeaeae;width:6px;height:6px;position:absolute;top:21px;right:20px;
+	transform: translateZ(0);-webkit-transform: translateZ(0);-ms-transform: translateZ(0);-moz-transform: translateZ(0);
+	-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);
+}
+.humen_text{font-size:14px;color:#fff;}
+.mtmenu_list > li.active .mtmenu{color:#111;font-weight:500;}
+.mtmenu_list > li.active .mtmenu:after{border-color:#111;border-width:2px;}
+.toplogo_link_m{}
+.btn_totalclose{width:50px;height:50px;display:block;position:absolute;top:0;right:0;z-index:5;background:url("../images/btn_menuclose.png") no-repeat 50% 50%/30% auto;}
+.btn_mhuclose{width:30px;height:30px;display:block;position:absolute;top:10px;right:10px;border-radius:8px;z-index:5;background:#7a0f0f url("../images/btn_topclose_m.png") no-repeat 50% 50%/80% auto;}
+@media (max-width:1023px){
+	.btn_totalcall,
+	.mobile_top_w{display:block;}
+	.header_wrap{height:50px;position:fixed;top:0;left:0;width:100%;z-index:100;}
+	.header_tb_w,
+	.midmenu_z{display:none;}
+	.midsec_w{padding-top:50px;}
+	.midsec_cont{padding:20px 15px 30px}
+}
