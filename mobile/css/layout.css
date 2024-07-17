@@ -8,7 +8,7 @@
 .phead_w{height:50px;background:url("../images/bg_top.png") no-repeat 0 0/cover;position:fixed;top:0;left:0;width:100%;z-index:100;}
 .phead_logo{display:table;height:50px;font-size:0;line-height:0;}
 .phead_logo_td{display:table-cell;vertical-align: middle;padding: 0 15px;}
-.phead_logo_td img{height:23px}
+.phead_logo_td img{height:100%;max-height:50px;}
 .btn_totalcall{width:50px;height:50px;background:url("../images/btn_toptotal.png") no-repeat 50% 50%/35% auto;display:inline-block;position:absolute;top:0;right:0;}
 .phead_w.type2{background:#fff;}
 .phead_w.type2 .phead_logo{margin:0 auto;}
