@@ -10,7 +10,7 @@
 .phead_logo_td{display:table-cell;vertical-align: middle;padding: 0 15px;}
 .phead_logo_td img{height:100%;max-height:50px;}
 .btn_totalcall{width:50px;height:50px;background:url("../images/btn_toptotal.png") no-repeat 50% 50%/35% auto;display:inline-block;position:absolute;top:0;right:0;}
-.phead_w.type2{background:#fff;}
+.phead_w.type2{background:#fff; border-bottom:1px solid #cecece;}
 .phead_w.type2 .phead_logo{margin:0 auto;}
 .phead_w.type2 .phead_logo img{height:50px;}
 .phead_w.type2 .btn_totalcall{background-image:url("../images/btn_toptotal2.png");}
@@ -25,6 +25,8 @@
 .pmid_secin{}
 .pmid_tit{color:#000000;line-height:1;text-align:center;font-weight: 500;font-size:19px;padding:20px 15px;}
 .pmid_cont{margin:0 15px;}
+.pmidfoot_wrap{display:flex;flex-direction: column; min-height:calc(var(--vh, 1vh) * 100);}
+.pmidfoot_wrap .pfoot_w{flex:0;}
 @media (max-width:360px){
 	.pf_copy{font-size:10px;}
 }
