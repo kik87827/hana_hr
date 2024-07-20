@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ico_arrow_d" width="22" height="16" viewBox="0 0 22 16">
+    <defs>
+        <style>
+            .cls-1{fill:#b0b2c0}.cls-2{fill:none}
+        </style>
+    </defs>
+    <path id="ico" d="M14.825 8.59L11 12.407 7.175 8.59 6 9.765l5 5 5-5z" class="cls-1" transform="translate(-4 -2.589)"/>
+    <path id="_ico_area" d="M0 0h16v16H0z" class="cls-2" data-name="*ico area"/>
+</svg>

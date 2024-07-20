@@ -3,3 +3,41 @@
 	컨텐츠 css
 */
 
+.midsort_box{}
+.midsort_long{}
+.midsort_item_list{}
+.midsort_item_list > li{}
+.midsort_item_list > li:last-of-type{}
+.midsort_item{}
+.midsort_item dt,
+.midsort_item dd{}
+.midsort_item dt{}
+.midsort_item dd{}
+.midsort_label{}
+.form_input_wrap{}
+input.form_input.calendar{}
+.midsort_short{}
+.btn_sort_submit{}
+
+.data_list_top_row{}
+.data_list_top_title{}
+.data_guide_item_list{}
+.data_guide_item_list > li{}
+.data_guide_item_list > li:last-of-type{}
+
+.data_guide_item{}
+.data_guide_item .ico_guide.end{}
+.data_guide_text{}
+
+.data_scroll_tb_wrap{}
+.data_scroll_thead_row{}
+.data_scroll_thead_tb{}
+.data_scroll_thead_tb th{}
+.data_scroll_thead_tb th.skin2{}
+.data_scroll_thead_tb th:last-of-type{}
+.data_thead_thtext{}
+.data_scroll_tbody_row{}
+.data_scroll_tbody_tb{}
+.data_scroll_tbody_tb td{}
+.data_scroll_tbody_tb td.skin2{}
+.data_tbody_tdtext{}
