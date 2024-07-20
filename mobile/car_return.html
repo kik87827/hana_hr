@@ -58,8 +58,190 @@
 			<section class="pmid_section">
 				<div class="pmid_secin">
 					<div class="pmid_tit">업무용 차량 반납</div>
-					<div class="pmid_cont">
-						내용이 들어갑니다.
+					<div class="pmid_cont type2">
+						<div class="cont_block_wrap">
+							<div class="cont_block">
+								<div class="cont_block_contents">
+									<div class="fvtb_w">
+										<table class="fvtb">
+											<tbody>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">차량선택</span></th>
+													<td class="has_fitem">
+														<select class="dsel">
+															<option>선택</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">예약일자</span></th>
+													<td class="has_fitem"><input type="date" class="input_calendar" value="2024-07-01"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp">
+														<span class="fvth_sp">예약상태</span>
+														<div class="fvth_else_wrap">
+															<div class="marking_item">
+																<i class="ico"></i>
+																<span class="marking_text">예약</span>
+															</div>
+														</div>
+													</th>
+													<td class="has_fitem">
+														<div class="mark_tb_wrap">
+															<table class="mark_tb">
+																<tbody>
+																	<tr>
+																		<th><span class="mark_thtext">9</span></th>
+																		<th><span class="mark_thtext">10</span></th>
+																		<th><span class="mark_thtext">11</span></th>
+																		<th><span class="mark_thtext">12</span></th>
+																		<th><span class="mark_thtext">1</span></th>
+																	</tr>
+																	<tr>
+																		<td><span class="marking_item"><i class="ico"></i></span></td>
+																		<td><span class="marking_item"><i class="ico"></i></span></td>
+																		<td></td>
+																		<td><span class="marking_item"><i class="ico"></i></span></td>
+																		<td></td>
+																	</tr>
+																	<tr>
+																		<th><span class="mark_thtext">2</span></th>
+																		<th><span class="mark_thtext">3</span></th>
+																		<th><span class="mark_thtext">4</span></th>
+																		<th><span class="mark_thtext">5</span></th>
+																		<th><span class="mark_thtext">6</span></th>
+																	</tr>
+																	<tr>
+																		<td></td>
+																		<td><span class="marking_item"><i class="ico"></i></span></td>
+																		<td></td>
+																		<td><span class="marking_item"><i class="ico"></i></span></td>
+																		<td><span class="marking_item"><i class="ico"></i></span></td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="cont_block">
+								<div class="cont_block_title">예약정보</div>
+								<div class="cont_block_contents">
+									<div class="fvtb_w">
+										<table class="fvtb">
+											<tbody>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">운행내역</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">운행목적</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">출발지</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">도착지</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="cont_block">
+								<div class="cont_block_title">주행후 기재</div>
+								<div class="cont_block_contents">
+									<div class="fvtb_w">
+										<table class="fvtb">
+											<tbody>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">주행거리(Km)</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">주행후 계기판의<br>거리(Km)</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">주차위치</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">유류비</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+												<tr>
+													<th class="has_fvth_sp"><span class="fvth_sp">부대비<br>(주차료, 통행료 등)</span></th>
+													<td class="has_fitem"><input type="text" class="fvint"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 첨부파일 -->
+						<div class="cont_form_wrap">
+							<div class="fileui_tb_w">
+								<div class="fileui_tb">
+									<div class="fileui_td has_btn">
+										<div class="fkef_tb2_w">
+											<input type="file" class="fkef_file">
+											<a href="javascript:;" class="btn_fakefile">파일 선택</a>
+										</div>
+									</div>
+									<div class="fileui_td">
+										<div class="filename_para">선택된 파일 없음</div>
+									</div>
+									<div class="fileui_td has_btn">
+										<a href="javascript:;" class="btn_fakefile">파일 등록</a>
+									</div>
+								</div>
+							</div>
+							<script>
+								$(function() {
+									$(".btn_fakefile").on("click", function() {
+										$(this).prev(".fkef_file").trigger("click");
+									});
+									$(".fkef_file").on("change", function() {
+										var fileValue = $(this).val().split("\\");
+										var fileName = fileValue[fileValue.length - 1];
+										$(".filename_para").text(fileName);
+									});
+								});
+							</script>
+							<div class="tbsk_tb_w">
+								<table class="tbsk_tb">
+									<thead>
+										<tr>
+											<th class="ctb2_w01">파일명</th>
+											<th class="ctb2_w02">용량</th>
+											<th class="ctb2_w03">삭제</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="has_data">첨부파일.jpg</td>
+											<td>14KB</td>
+											<td><a href="javascript:;" class="btn_ctblink">삭제</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- // 첨부파일 -->
+						<div class="btn_bottom_wrap">
+							<a href="javascript:;" class="btn_submit_box"><span class="btn_submit_text">신청</span></a>
+							<a href="javascript:;" class="btn_submit_box skin2"><span class="btn_submit_text">수정</span></a>
+						</div>
 					</div>
 				</div>
 			</section>

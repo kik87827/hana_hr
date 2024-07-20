@@ -41,6 +41,7 @@ input[type="file"]{vertical-align:middle; width:300px; border:1px solid #d4d4d4}
 input[type=text]::-ms-clear {
   display:none;
 }
+input{font-family:'Noto Sans Korean',"dotum","verdana";}
 .skip_menu , .hide{display:none;}
 .clear{clear:both;}
 .hide{display:none;}
