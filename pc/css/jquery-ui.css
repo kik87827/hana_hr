@@ -369,7 +369,7 @@ background: #fff url("../images/ico_arrow_d_cus.svg") no-repeat 100% 50%;-webkit
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	background: #3d3e51;
+	background: #13d5aa;
 	color: #fff !important;
 	border-radius:100%;
 	min-width:8px;text-align:center;

@@ -6,9 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=1280" />
 		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/jquery-ui.css" />
 		<link rel="stylesheet" href="./css/layout.css" />
 		<link rel="stylesheet" href="./css/contents.css" />
 		<script src="./js/jquery-1.12.4.min.js"></script>
+		<script src="./js/jquery-ui.js"></script>
 		<script src="./js/swiper.min.js"></script>
 		<script src="./js/slick.min.js"></script>
 		<script src="./js/iscroll.js"></script>
@@ -147,9 +149,17 @@
 								</li>
 							</ul>
 						</div>
-						<div class="data_scroll_tb_wrap">
+						<div class="data_scroll_tb_wrap" data-scroll="10">
 							<div class="data_scroll_thead_row">
 								<table class="data_scroll_thead_tb">
+									<colgroup>
+										<col style="width:50px">
+										<col style="width:40px">
+										<col>
+										<col style="width:60px">
+										<col style="width:80px">
+										<col style="width:60px">
+									</colgroup>
 									<thead>
 										<tr>
 											<th><span class="data_thead_thtext">번호</span></th>
@@ -174,6 +184,14 @@
 							</div>	
 							<div class="data_scroll_tbody_row">
 								<table class="data_scroll_tbody_tb">
+									<colgroup>
+										<!-- <col style="width:50px">
+										<col style="width:40px">
+										<col>
+										<col style="width:60px">
+										<col style="width:80px">
+										<col style="width:60px"> -->
+									</colgroup>
 									<tbody>
 										<tr>
 											<td><span class="data_tbody_tdtext">1</span></td>
@@ -183,15 +201,15 @@
 											<td><span class="data_tbody_tdtext">193호0001</span></td>
 											<td><span class="data_tbody_tdtext">G90</span></td>
 											<td class="skin2 end"><span class="data_tbody_tdtext">인사총무팀<br>홍길동</span></td>
-											<td class="skin2"><span class="data_tbody_tdtext">인사총무팀<br>홍길동</span></td>
+											<td class="skin2 end"><span class="data_tbody_tdtext">인사총무팀<br>홍길동</span></td>
 											<td class="skin2"></td>
 											<td class="skin2"></td>
-											<td class="skin2"><span class="data_tbody_tdtext">인사총무팀<br>홍길동</span></td>
+											<td class="skin2 end"><span class="data_tbody_tdtext">인사총무팀<br>홍길동</span></td>
 											<td class="skin2"></td>
 											<td class="skin2"></td>
 											<td class="skin2"></td>
 											<td class="skin2"></td>
-											<td class="skin2"><span class="data_tbody_tdtext">인사총무팀<br>홍길동</span></td>
+											<td class="skin2 end"><span class="data_tbody_tdtext">인사총무팀<br>홍길동</span></td>
 										</tr>
 										<tr>
 											<td><span class="data_tbody_tdtext">2</span></td>
@@ -453,6 +471,74 @@
 				</div>
 			</div>
 			<!-- // middle -->
+			<script>
+				$(function(){
+					$(".form_input.calendar").datepicker({
+						monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+						dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+						changeMonth: true,
+						changeYear: true,
+						dateFormat: 'yy-mm-dd',
+						showOn: "both",
+						buttonImageOnly: true,
+						buttonImage: "./images/ico_calendar.png",
+					});
+
+					
+				});
+
+				$(window).on("load",function(){
+					scrollTable();
+				})
+
+				function scrollTable(){
+					let data_scroll_tb_wrap = $(".data_scroll_tb_wrap");
+					data_scroll_tb_wrap.each(function(){
+						let $this = $(this);
+						let $this_thead = $this.find(".data_scroll_thead_row");
+						let $this_tbody = $this.find(".data_scroll_tbody_row");
+						let $this_tbody_tr = $this_tbody.find("tr").eq(Number(data_scroll_tb_wrap.attr("data-scroll")));
+						let $this_tbody_tb = $this_tbody.find(".data_scroll_tbody_tb");
+						
+						$this_tbody.find("colgroup").html($this_thead.find("colgroup").html());
+
+						
+						
+						if($this_tbody_tr.length){
+							$this_tbody.css({
+								"max-height" : $this_tbody_tr.position().top
+							});
+							$this_thead.css({"padding-right" : getScrollbarWidth() });
+						}
+					});
+				}
+
+				function getScrollbarWidth() {
+					// Create a temporary div container and append it into the body
+					const container = document.createElement('div');
+					// Append the div container into the body
+					document.body.appendChild(container);
+
+					// Force scrollbar to appear
+					container.style.overflow = 'scroll';
+					container.style.width = '50px';
+					container.style.height = '50px';
+
+					// Add inner div
+					const inner = document.createElement('div');
+					container.appendChild(inner);
+					inner.style.width = '100%';
+					inner.style.height = '100%';
+
+					// Calculate the width based on the difference between the container width and the inner width
+					const scrollbarWidth = container.offsetWidth - inner.offsetWidth;
+
+					// Remove the temporary div container
+					document.body.removeChild(container);
+
+					return scrollbarWidth;
+				}
+			</script>
 			<!-- footer -->
 			<div class="footer_wrap">
 				<div class="footer_pixin mpix">
